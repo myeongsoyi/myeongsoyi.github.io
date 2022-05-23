@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="grj_week2.css">
     <title>고량주</title>
+    <link rel="stylesheet" href="grj_week2.css">
+    <script defer src="grj_week4_modal.js"></script>
+    <script defer src="grj_week4_addItems.js"></script>
 </head>
 
 <body>
@@ -13,6 +15,7 @@
     </header>
     <main>
         <aside>
+            <button id="addbtn">추가</button>
             <span>소주</span>
             <span>맥주</span>
             <span>샴페인</span>
@@ -47,6 +50,18 @@
             </div>
         </section>
     </main>
+    <div id="modal">
+        <form>
+            <button id="closewx">X</button><br>
+            <label for="name">이름</label><br>
+            <input type="text" placeholder="스파클링와인"><br>
+            <label for="image">이미지</label><br>
+            <input type="text" placeholder="url"><br>
+            <label for="content">내용</label><br>
+            <input type=" text" placeholder="파티엔 빠질 수 없죠!"><br>
+            <button id="save">저장</button>
+        </form>
+    </div>
 </body>
 
 </html>

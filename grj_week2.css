@@ -25,6 +25,19 @@ aside {
     flex-flow: column nowrap;
 }
 
+aside>button {
+    margin: 5px;
+    border: 2px solid lightcoral;
+    border-radius: 10px;
+    background-color: lightblue;
+    color: lightcoral;
+    cursor: pointer;
+}
+
+aside>button :hover {
+    background-color: lightcoral;
+    color: lightblue;
+}
 
 section {
     min-width: 200px;
@@ -59,4 +72,41 @@ section div img {
     section div {
         background-color: lightgray;
     }
+}
+
+#modal {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    z-index: 11;
+    padding: 20px;
+}
+
+#closewx {
+    background-color: blanchedalmond;
+    cursor: pointer;
+    border: 0px
+}
+
+#save {
+    background-color: lightcoral;
+    color: lightblue;
+    cursor: pointer;
+    margin: 5px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+}
+
+#save :hover {
+    background-color: lightblue;
+    color: lightcoral;
+
 }
