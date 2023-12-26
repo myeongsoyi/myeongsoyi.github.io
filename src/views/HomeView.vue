@@ -5,18 +5,12 @@
           <div>
               <a>home</a>
               <a>blog</a>
-              <a>resume</a>
+              <a>about me</a>
           </div>
       </nav>
       <div id="laptops">
           <div id="tab">
-              <header>
-                  <img src="https://avatars.githubusercontent.com/u/66073336?v=4" alt="my github profile picture">
-                  <h1>MYEONG SOYI</h1>
-                  <p>
-                    안녕하세요 개발자 명소이입니다.
-                  </p>
-              </header>
+              <Header></Header>
               <main>
                   <article>
                       <img src="../assets/img/pageimg.jpg" alt="프로젝트이름 page image">
@@ -30,22 +24,7 @@
                       <img src="../assets/img/pageimg.jpg" alt="프로젝트이름 page image">
                       <h2>프로젝트이름</h2>
                   </article>
-                  <article>
-                      <img src="../assets/img/pageimg.jpg" alt="프로젝트이름 page image">
-                      <h2>프로젝트이름</h2>
-                  </article>
-                  <article>
-                      <img src="../assets/img/pageimg.jpg" alt="프로젝트이름 page image">
-                      <h2>프로젝트이름</h2>
-                  </article>
-                  <article>
-                      <img src="../assets/img/pageimg.jpg" alt="프로젝트이름 page image">
-                      <h2>프로젝트이름</h2>
-                  </article>
-                  <article>
-                      <img src="../assets/img/pageimg.jpg" alt="프로젝트이름 page image">
-                      <h2>프로젝트이름</h2>
-                  </article>
+                  
               </main>
           </div>
           <footer>
@@ -61,7 +40,7 @@
   </template>
   
   <script setup>
-  
+  import Header from '@/components/Header.vue';
   </script>
   
   <style scoped>
@@ -93,19 +72,7 @@
   nav>div>a:hover{
       background-color: beige;
   }
-  header{
-      background-color: antiquewhite;
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-  header>img{
-      width: 10rem;
-      height: 10rem;
-      border-radius: 50%;
-  }
+
   main{
       background-color: cadetblue;
       display: flex;
@@ -144,17 +111,23 @@
       object-fit: contain;
   }
   
-  @media (max-width: 480px){
+  @media (max-width: 649px){
       /* smaller smartphones */
       article{
-          width: 300px;
+          /* width: 300px;
           height: 200px;
           margin: 5vw;
-          padding: 5vw;
+          padding: 5vw; */
+          width: 60vw;
+          height: 40vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
       }
   }
   
-  @media (min-width: 481px) and (max-width : 829px){
+  @media (min-width: 650px) and (max-width : 829px){
       /* tablets & larger smartphones */
       #tab{
           display: flex;
@@ -178,10 +151,6 @@
           display: flex;
           /* height: 100vh; */
       }
-      header{
-          width: 30vw;
-          justify-content: flex-start;
-      }
       main{
           width: 50vw;
       }
@@ -199,7 +168,9 @@
       #laptops{
           display: flex;
           justify-content: center;
-          height: 100vh;
+          width: 1280px;
+          margin: auto;
+          /* height: 100vh; */
       }
       #tab{
           display: flex;
@@ -207,11 +178,6 @@
       nav{
           margin: auto;
           width: 1280px;
-      }
-      header{
-          width: 384px;
-          box-sizing: border-box;
-          justify-content: flex-start;
       }
       main{
           width: 640px;
@@ -223,9 +189,9 @@
       }
       footer{
           width: 256px;
-          height: 90vh;
+          /* height: 90vh; */
           padding: 1rem;
-          box-sizing: border-box;
+          /* box-sizing: border-box; */
           flex-direction: column;
           justify-content: flex-start;
       }
