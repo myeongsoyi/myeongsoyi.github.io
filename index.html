@@ -11,6 +11,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MYEONG SOYI</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f8f9fa;
+        padding-top: 80px; /* 헤더 높이만큼 여백 */
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: white;
+        border-bottom: 1px solid #e0e0e0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    /* 반응형 디자인 */
+    @media (max-width: 768px) {
+        header nav {
+            gap: 1.5rem;
+        }
+        
+        header a {
+            font-size: 1rem;
+            padding: 0.6rem 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header nav {
+            gap: 1rem;
+        }
+        
+        header a {
+            font-size: 0.9rem;
+            padding: 0.5rem 0.8rem;
+        }
+    }
+
+</style>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XLRKSV6Q4"></script>
@@ -26,7 +90,13 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M92CSQJN"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <!-- <a href="./character_counter.html"> 글자 수 세기</a> -->
+  <header>
+    <nav>
+      <a href="https://savemyspagetti.tistory.com/"> Blog</a>
+      <a href="https://github.com/myeongsoyi"> GitHub </a>
+      <a href="./character_counter.html"> 📝 </a>
+    </nav>
+  </header>
   <iframe src="https://mewing-burn-69e.notion.site/ebd/1ff555ed832d8097859fd296cf09385c" width="100%" height="900" frameborder="0" allowfullscreen />
 </body>
 </html>
